@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO: KEYLA ROHNA AZZAHRA</title>
+    <style>
+        body { font-family: 'Georgia', serif; background: linear-gradient(to bottom, #f5f5dc, #e6e6fa); color: #333; margin: 0; padding: 20px; text-align: center; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        h1 { color: #8b4513; }
+        nav { margin: 20px; }
+        nav a { margin: 0 10px; text-decoration: none; color: #8b4513; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .content { max-width: 600px; margin: auto; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"></a><a href="letter.html"></a><a href="gallery.html"></a><a href="message.html"></a>
+    </nav>
+    <div class="content">
+        <h1>FROM: HAWARI ,
+            TO: KEYLA.
+        </h1>
+        <p> Terimkasih Sudah menjadi Bagian Yang Baik Dalam Hidupku.</p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Ini Aku Buat Dengan Sepenuh Hati.</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #f5f5dc, #e6e6fa);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .letter {
+            background: #fff;
+            border: 2px solid #d4a574;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .letter::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #d4a574;
+        }
+        h1 {
+            text-align: center;
+            color: #8b4513;
+            margin-bottom: 20px;
+        }
+        #typed-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: #8b4513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #a0522d;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <h1>Surat Ini Aku Buat Untuk Kamu, Dari Aku.</h1>
+        <div id="typed-text"></div>
+        <button onclick="alert('I Love You So Much, Forever!!!')">For You</button>
+    </div>
+
+    <script>
+        const text = `Dear Keyla, Aku harap surat ini menemukanmu dalam keadaann yang baik dan bahagia, terimakasih atas semua kenagan ini, yang terindah adalah bersamamu. maafkan aku jika aku pernah menyakiti hatimu, itu semua engga pernah aku sengaja kan, percayalah.
+        Aku menulis surat ini untuk mengungkapkan perasaan aku yang tersisa untuk kamu, aku tahu mungkin kata-kata ini tidak cukup untuk menggambarkan betapa aku menyayangi kamu, tapi aku ingin kamu tahu bahwa kamu adalah first experience terindah dalam hidup aku, maaf jika aku pernah buat kamu kecewa, aku janji aku engga akan mengulangi lagi kepada siapapun.
+        Melalui surat ini, yang aku sayangi, walaupun surat ini sederhana, tapi setiap kata didalamnya penuh dengan kasih sayang dan perhatian aku untuk kamu. aku ingin tahu bahwa aku selalu memikirkan kamu, dan aku berharap yang terbaik untuk kamu dalam setiap langkah hidupmu, I love you  more than anything in this world.
+        aku ingin mengucapkan terimkasih karena telah menjadi bagian penting dalam hidup aku. kamu adalah sumber kebahagiaan dan inspirasi agar aku selalu bersemangat untuk sekolah dan menjalani hari-hari aku. kehadiran kamu membuat hidup aku lebih berwarna dan berarti.
+
+
+
+Aku ingin mengatakan betapa beruntungnya aku memiliki kamu di hidupku. Setiap hari bersamamu adalah petualangan yang indah, penuh tawa dan cinta. Maafkan aku jika pernah membuatmu sedih, aku berjanji akan selalu ada untukmu.
+
+Aku mencintaimu lebih dari kata-kata bisa ungkapkan.
+
+Dengan cinta selamanya,
+Keyla ROhna Azzahra.`;
+
+        let index = 0;
+        const speed = 50; // Kecepatan ketik (ms per karakter)
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById('typed-text').innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = typeWriter;
+
+        // Opsional: Tambahkan musik latar (ganti URL dengan file MP3 Anda)
+        // const audio = new Audio('path/to/your/romantic-song.mp3');
+        // audio.loop = true;
+        // audio.play();
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gift Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card" id="giftCard">
+            <div class="card-front">
+                <div class="cover-content">
+                    <h1>Hadiah Untuk kamu </h1>
+                </div>
+            </div>
+            <div class="card-inside">
+                <h2>I Miss You.</h2>
+                <p>Hai Keyla.</p>
+                <p>Semoga Hari' Kamu Baik-Baik aja Yahh, Ini adalah hadiah kecil dari Aku.</p>
+                <div class="gift-code">Happy New Year, Maafin aku kalau tahun ini aku ga lagi sama kamu, I am sory, honestly i feel wrong for everything i did to you.</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Keyla</title>
+    <style>
+        /* CSS untuk Tampilan */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #ffe4e1; /* Pink pastel */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .heart-icon {
+            font-size: 50px;
+            color: #ff4d6d;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* Animasi Hati Berjatuhan */
+        .falling-heart {
+            position: fixed;
+            top: -10px;
+            color: #ff4d6d;
+            font-size: 20px;
+            user-select: none;
+            z-index: 1;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(105vh) rotate(360deg);
+            }
+        }
+
+        button {
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #c9184a;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heart-icon">❤️</div>
+        <h1>Halo Keyla.</h1>
+        <p>Setiap detik bersamamu adalah momen favoritku. Terima kasih sudah menjadi bagian terindah dalam hidupku.</p>
+        <button onclick="showSurprise()">Untuk kamu</button>
+        <p id="message" style="display:none; margin-top: 20px; font-weight: bold; color: #d63384;">
+            I Love You More! 🌹
+        </p>
+    </div>
+
+    <script>
+        // Membuat animasi hati berjatuhan
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('falling-heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+            heart.style.opacity = Math.random();
+            
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createHeart, 300);
+
+        function showSurprise() {
+            const msg = document.getElementById('message');
+            msg.style.display = 'block';
+            alert("Kamu adalah yang terbaik! ❤️");
+        }
+    </script>
+</body>
+</html>
